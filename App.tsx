@@ -15,7 +15,7 @@ export default function App() {
       alert('権限がないよ！')
       return;
     }
-
+    // 画像選択ダイアログを開く
     const pickerResult = await ImagePicker.launchImageLibraryAsync();
 
     if (pickerResult.cancelled) return;
@@ -27,7 +27,9 @@ export default function App() {
     if (!selectedImage) return;
     if (Platform.OS === 'web') return;
 
+    // uriから画像化
     const imageTmp = await ImageManipulator.manipulateAsync(selectedImage.uri);
+    // シェアダイアログを開く
     await Sharing.shareAsync(imageTmp.uri);
   }
 
