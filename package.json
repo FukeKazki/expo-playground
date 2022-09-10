@@ -15,7 +15,10 @@
     "react-native": "0.69.5",
     "typescript": "^4.6.3",
     "@types/react": "~18.0.0",
-    "@types/react-native": "~0.69.1"
+    "@types/react-native": "~0.69.1",
+    "expo-image-picker": "~13.3.1",
+    "expo-sharing": "~10.3.0",
+    "expo-image-manipulator": "~10.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
